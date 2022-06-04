@@ -3,7 +3,10 @@ Simple PWM servo tester
 
 Der Pi Servotester PWM ist ein schlankes Programm für den Raspberry Pi mit grafischer Oberfläche zum Testen von Modellbau-Servos.
 Es benutzt einen der beiden Hardware-PWM-Kanäle, welche mit sysfs angesteuert werden. Wir brauchen also keine weiteren Programme, kein Python, kein WiringPi oder PiGPIO, nix.
+
 ![Screenshot](piservotester.png)
+
+
 Wichtiger Hinweis: Zuerst das Programm starten und dann erst den Servo anschließen!
 
 Das Programm benötigt zum Kompilieren das Package "Industrial". Man kann es einfach über den OnlinePackageManager nachinstallieren.
