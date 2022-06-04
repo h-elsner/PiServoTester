@@ -13,10 +13,7 @@ Das Programm benötigt zum Kompilieren das Package "Industrial". Man kann es ein
 
 HW-PWM Anschluss freischalten:
 	sudo nano bootconfig.txt
-
 Hier folgende Zeilen eintragen:
 	[PWM0 auf GPIO18 freigeben]
 	dtoverlay=pwm,pin=18,func=2
-
-Speichern und reboot.
-Prüfen, ob es jetzt ein Verzeichnis /sys/class/pwm/pwmchip0 gibt. Wenn ja, alles OK.
+Speichern und reboot. Prüfen, ob es jetzt ein Verzeichnis /sys/class/pwm/pwmchip0 gibt. Wenn ja, alles OK.
