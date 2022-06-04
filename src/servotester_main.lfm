@@ -49,7 +49,7 @@ object Form1: TForm1
     ClientWidth = 215
     ItemIndex = 0
     Items.Strings = (
-      ' 50Hz - 20ms'
+      ' 50Hz - 20ms (Default)'
       ' 70Hz - 14,3ms'
       '300Hz - 3,3ms'
     )

@@ -1,3 +1,19 @@
+{********************************************************}
+{                                                        }
+{         Einfacher Servo tester mit Raspberry PI        }
+{                                                        }
+{       Copyright (c) 2022         Helmut Elsner         }
+{                                                        }
+{       Compiler: FPC 3.3.1   /    Lazarus 2.3.0         }
+{                                                        }
+{ Pascal programmers tend to plan ahead, they think      }
+{ before they type. We type a lot because of Pascal      }
+{ verboseness, but usually our code is right from the    }
+{ start. We end up typing less because we fix less bugs. }
+{           [Jorge Aldo G. de F. Junior]                 }
+{********************************************************}
+
+
 (*
 Servo input:
 PWM wird üblicherweise zwischen 1100-1900µs genutzt.
@@ -10,15 +26,9 @@ untere Stellung der Sticks: 	 683=-100%
 Mittelstellung:		        2048=0%
 obere Stellung der Sticks: 	3412=+100%
 
-
-
-
 HW-PWM auf GPIO18:
    dtoverlay=pwm,pin=18,func=2
 in /boot/config.txt eintragen und reboot.
-
-
-
 *)
 
 unit servotester_main;
