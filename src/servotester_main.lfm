@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 1108
+  Left = 1288
   Height = 412
-  Top = 120
+  Top = 140
   Width = 570
   Caption = 'Form1'
   ClientHeight = 412
@@ -11,7 +11,7 @@ object Form1: TForm1
   OnActivate = FormActivate
   OnClose = FormClose
   OnCreate = FormCreate
-  LCLVersion = '2.3.0.0'
+  LCLVersion = '2.2.0.4'
   object ggServo: TA3nalogGauge
     Left = 272
     Height = 280
@@ -45,7 +45,7 @@ object Form1: TForm1
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 97
+    ClientHeight = 103
     ClientWidth = 215
     ItemIndex = 0
     Items.Strings = (
@@ -70,13 +70,13 @@ object Form1: TForm1
     ChildSizing.ShrinkVertical = crsScaleChilds
     ChildSizing.Layout = cclLeftToRightThenTopToBottom
     ChildSizing.ControlsPerLine = 1
-    ClientHeight = 97
+    ClientHeight = 103
     ClientWidth = 215
     ItemIndex = 0
     Items.Strings = (
       '1100 - 1900µs (1500µs)'
       '900 - 2100µs (1500µs)'
-      '683 - 3412µs (2048µs)'
+      '* 683 - 3412µs (2048µs)'
     )
     OnClick = rgPulseClick
     TabOrder = 2
@@ -99,20 +99,19 @@ object Form1: TForm1
   end
   object cbRange: TCheckBox
     Left = 32
-    Height = 26
+    Height = 23
     Top = 301
-    Width = 91
+    Width = 78
     Caption = 'cbRange'
     OnChange = cbRangeChange
     TabOrder = 4
   end
   object lblPulse: TLabel
     Left = 304
-    Height = 22
+    Height = 16
     Top = 301
-    Width = 56
+    Width = 49
     Caption = 'lblPulse'
-    ParentColor = False
     OnDblClick = lblPulseDblClick
   end
 end
